@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  descripcion: MyText
+  temporada: MyString
+  importador: MyString
+  cliente: MyString
+  marca: MyString
+  proveedor: MyString
+  embarque: MyString
+  imagen_url: MyString
+
+two:
+  codigo: MyString
+  descripcion: MyText
+  temporada: MyString
+  importador: MyString
+  cliente: MyString
+  marca: MyString
+  proveedor: MyString
+  embarque: MyString
+  imagen_url: MyString

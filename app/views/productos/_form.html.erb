@@ -1,0 +1,53 @@
+<%= form_for(@producto) do |f| %>
+  <% if @producto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@producto.errors.count, "error") %> prohibited this producto from being saved:</h2>
+
+      <ul>
+      <% @producto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %><br />
+    <%= f.text_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :temporada %><br />
+    <%= f.text_field :temporada %>
+  </div>
+  <div class="field">
+    <%= f.label :importador %><br />
+    <%= f.text_field :importador %>
+  </div>
+  <div class="field">
+    <%= f.label :cliente %><br />
+    <%= f.text_field :cliente %>
+  </div>
+  <div class="field">
+    <%= f.label :marca %><br />
+    <%= f.text_field :marca %>
+  </div>
+  <div class="field">
+    <%= f.label :proveedor %><br />
+    <%= f.text_field :proveedor %>
+  </div>
+  <div class="field">
+    <%= f.label :embarque %><br />
+    <%= f.text_field :embarque %>
+  </div>
+  <div class="field">
+    <%= f.label :imagen_url %><br />
+    <%= f.text_field :imagen_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
