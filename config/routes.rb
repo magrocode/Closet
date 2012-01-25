@@ -1,4 +1,7 @@
 Closet::Application.routes.draw do
+  get "buscador/index"
+  root :to => 'buscador#index'
+
   resources :productos
 
   # The priority is based upon order of creation:
